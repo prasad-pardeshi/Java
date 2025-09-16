@@ -17,13 +17,14 @@ public class DuplicateNumber {
 		        for (int num : numbers) {
 		            countMap.put(num, countMap.getOrDefault(num, 0) + 1);
 		        }
+		        
+		        System.out.println(countMap);
 
-		        System.out.println("Duplicate numbers:");
-		        for (Map.Entry<Integer, Integer> entry : countMap.entrySet()) {
-		            if (entry.getValue() > 1) {
-		                System.out.println(entry.getKey() + " → " + entry.getValue() + " times");
-		            }
-		        }
+				/*
+				 * System.out.println("Duplicate numbers:"); for (Map.Entry<Integer, Integer>
+				 * entry : countMap.entrySet()) { if (entry.getValue() > 1) {
+				 * System.out.println(entry.getKey() + " → " + entry.getValue() + " times"); } }
+				 */
 		    }
 		}
 	

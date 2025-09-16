@@ -15,9 +15,11 @@ public class Mastercard {
 				int count = Character.getNumericValue(ch);
 				sb.append("1".repeat(count));
 			}
-			else {
-				sb.append(ch);
-			}
+			
+			  else {
+				  sb.append(ch);
+				  }
+			
 		}
 		
 		System.out.println(sb);

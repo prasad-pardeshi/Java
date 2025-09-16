@@ -5,7 +5,7 @@ public class ReverseString {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String original = "PRASAD";
+		String original = "PRASAD PARDESHI";
 		
 		StringBuilder sb = new StringBuilder(original);
 		sb.reverse().toString();

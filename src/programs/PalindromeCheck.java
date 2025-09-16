@@ -9,13 +9,8 @@ public class PalindromeCheck {
 			
 		//if string contains caps and small letters, convert string lower or upper case and then proceed
 		String name = str.toLowerCase().toString();
-		System.out.println(name);
-	
 		String reversed = new StringBuilder(name).reverse().toString();
 		System.out.println(name.equals(reversed));
-		
-		
-		
 		
 		
 		

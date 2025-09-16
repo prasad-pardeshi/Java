@@ -2,7 +2,7 @@ package programs;
 
 import java.util.HashMap;
 
-public class MoreThanTwoNum {
+public class NumAppearMoreThanTwice {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

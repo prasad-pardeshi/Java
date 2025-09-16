@@ -18,19 +18,17 @@ public class WindowHandles {
 		driver.get("http://rahulshettyacademy.com/loginpagePractise");
 		driver.manage().window().maximize();
 		driver.findElement(By.xpath("//a[@class=\"blinkingText\"][1]")).click();
+
+		//get child window title
 		
 		Set<String> windows = driver.getWindowHandles();
 		Iterator<String> it = windows.iterator();
-		
 		String parentId = it.next();
 		String childId = it.next();
-		
 		String childTitle = driver.switchTo().window(childId).getTitle();
-		System.out.println("Child Title is "+ childTitle);
+		System.out.println("Child Title is "+ childTitle);		
 		
-		System.out.println(driver.findElement(By.xpath("//div[@class=\"col-md-8\"]/p[2]/strong/a")).getText());
-		
-		
+		System.out.println(driver.findElement(By.xpath("//div[@class=\"col-md-8\"]/p[2]/strong/a")).getText());	
 		
 		
 		
